@@ -5,7 +5,9 @@ import { VscFlame } from "@react-icons/all-files/vsc/VscFlame";
 
 const Switch = () => {
   const [isDarkModeOn, setIsOn] = useState(
-    JSON.parse(window?.localStorage?.getItem("subhan:darkMode") || "false")
+    typeof window !== "undefined"
+      ? JSON.parse(window?.localStorage?.getItem("subhan:darkMode") || "false")
+      : false
   );
   return (
     <div
