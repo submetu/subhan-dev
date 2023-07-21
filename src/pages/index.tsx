@@ -31,11 +31,7 @@ const IndexPage: React.FC<PageProps> = () => {
           </motion.div>
         </div>
         <div>
-          {(globalThis as any).hideDarkModeSwitcher ? (
-            <div className="w-24" />
-          ) : (
-            <Switch />
-          )}
+          <Switch />
         </div>
       </div>
       <div className="container text-center">

@@ -17,6 +17,7 @@ export default function HTML(props) {
   supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
   === true; if (!mode && supportDarkMode){
     document.getElementsByTagName( 'html' )[0].setAttribute( 'class', 'dark' );
+    localStorage.setItem('subhan:darkMode','true');
     globalThis.hideDarkModeSwitcher = true;
    }else{
     document.getElementsByTagName( 'html' )[0].setAttribute( 'class', mode ? 'dark' : '' );
