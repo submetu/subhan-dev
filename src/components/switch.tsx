@@ -12,6 +12,7 @@ const Switch = () => {
       className="w-24"
       data-darkmode={isDarkModeOn}
       onClick={() => {
+        if (!window) return;
         const newMode = !isDarkModeOn;
         window?.localStorage?.setItem(
           "subhan:darkMode",
