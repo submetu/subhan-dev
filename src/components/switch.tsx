@@ -1,22 +1,22 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { VscColorMode } from "@react-icons/all-files/vsc/VscColorMode";
 import { VscFlame } from "@react-icons/all-files/vsc/VscFlame";
 
 const Switch = () => {
-  const [isDarkModeOn, setIsOn] = useState(
-    typeof window !== "undefined"
-      ? JSON.parse(window?.localStorage?.getItem("subhan:darkMode") || "false")
-      : false
-  );
+  const [isDarkModeOn, setIsOn] = useState(false);
+
+  useEffect(() => {
+    setIsOn(JSON.parse(localStorage.getItem("subhan:darkMode") || "false"));
+  }, []);
+
   return (
     <div
       className="w-24"
       data-darkmode={isDarkModeOn}
       onClick={() => {
-        if (!window) return;
         const newMode = !isDarkModeOn;
-        window?.localStorage?.setItem(
+        localStorage.setItem(
           "subhan:darkMode",
           newMode ? JSON.stringify(true) : JSON.stringify(false)
         );
