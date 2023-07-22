@@ -21,6 +21,7 @@ export default function HTML(props) {
     globalThis.hideDarkModeSwitcher = true;
    }else{
     document.getElementsByTagName( 'html' )[0].setAttribute( 'class', mode ? 'dark' : '' );
+    localStorage.setItem('subhan:darkMode',mode ? 'true' : '');
    }
     } catch (e) {} })();`,
           }}
