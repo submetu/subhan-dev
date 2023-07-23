@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import * as React from "react";
-import { homeAnimationConfig } from "./home";
+import { homeAnimationConfig } from "./homeAnimationConfig";
 
 export const Pop: React.FC<React.PropsWithChildren & any> = (props) => {
   return (
