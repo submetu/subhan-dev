@@ -1,2 +1,2 @@
 import "./src/styles/global.css"
-import "@fontsource/nanum-myeongjo";
+import "@fontsource/raleway/200.css";
