@@ -1,3 +1,4 @@
 export interface IBackgroundRotate{
-    top: number
+    top: number;
+    xStart?: number
 }
