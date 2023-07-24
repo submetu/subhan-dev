@@ -5,7 +5,10 @@ import Pop from "../animation/Pop";
 
 const SocialIcons = () => {
   return (
-    <Pop transition={{ duration: 0.65, delay: 0.3 }}>
+    <Pop
+      transition={{ duration: 0.65, delay: 0.3 }}
+      className="container text-center"
+    >
       <div className="inline-block">
         <div className="flex justify-center gap-2 dark:bg-aliceblue p-4 transition-colors duration-1000	 rounded-lg">
           <motion.div whileHover={{ scale: 1.1 }}>

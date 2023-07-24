@@ -17,7 +17,7 @@ export const BackgroundCenter: React.FC<
     restDelta: 0.001
   });
   const scale = useTransform(scaleX, [0, 1], [1, 0]);
-  return <motion.div style={{ scale:scale }}>{props.children}</motion.div>;
+  return <motion.div style={{ scale:scale }} className={props.className}>{props.children}</motion.div>;
 };
 
 export default BackgroundCenter;
