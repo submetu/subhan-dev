@@ -11,8 +11,11 @@ import { VscSymbolArray } from "@react-icons/all-files/vsc/VscSymbolArray";
 import BackgroundRotateAntiClockwise from "../animation/BackgroundRotateAntiClockwise";
 import BackgroundRotateClockwise from "../animation/BackgroundRotateClockwise";
 
-const svgClassName =
-  "dark:fill-white lg:w-[200px] lg:h-[200px] md:w-[150px] md:h-[150px] sm:w-[100px] sm:h-[100px]";
+const svgClassName = `dark:fill-white 
+  lg:w-[200px] lg:h-[200px] 
+  md:w-[150px] md:h-[150px] 
+  sm:w-[100px] sm:h-[100px] 
+  sm:block hidden`;
 const BackgroundItems = () => {
   return (
     <>
