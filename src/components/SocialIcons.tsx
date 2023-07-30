@@ -22,7 +22,7 @@ const SocialIcons = () => {
             <SocialIcon
               target="_blank"
               url="https://linkedin.com/in/subhannaeem"
-              className="flex-initial icon"
+              className="flex-initial icon fill-gray"
             />
           </motion.div>
 

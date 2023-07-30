@@ -7,7 +7,7 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      sans: ["Raleway"],
+      sans: ["Raleway", "roboto"],
     },
     container: {
       padding: "2rem",

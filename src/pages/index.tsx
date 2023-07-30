@@ -4,6 +4,11 @@ import SocialIcons from "../components/SocialIcons";
 import BackgroundItems from "../components/BackgroundItems";
 import HeaderContent from "../components/HeaderContent";
 import LaptopCenter from "../components/LaptopCenter";
+import { DiJava } from "@react-icons/all-files/di/DiJava";
+import { SiTypescript } from "@react-icons/all-files/si/SiTypescript";
+import { DiPython } from "@react-icons/all-files/di/DiPython";
+import CenterRowItem from "../components/CenterRowItem";
+import ProgrammingLanguages from "../components/ProgrammingLanguages";
 
 const IndexPage: React.FC<PageProps> = () => {
   const [isDomLoaded, setIsDomLoaded] = React.useState(false);
@@ -18,6 +23,9 @@ const IndexPage: React.FC<PageProps> = () => {
         <HeaderContent />
         <SocialIcons />
         <LaptopCenter />
+        <div style={{ height: 200 }} />
+        <ProgrammingLanguages />
+
         <div style={{ height: 2000 }} />
       </div>
     )
